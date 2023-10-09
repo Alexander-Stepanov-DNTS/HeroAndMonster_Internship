@@ -6,12 +6,35 @@
 
     <groupId>org.example</groupId>
     <artifactId>HeroAndMonster_Internship_HeadsAndHands</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
+    <version>1.0</version>
+    <packaging>jar</packaging>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <index>true</index>
+                        <manifest>
+                            <mainClass>Main</mainClass>
+                        </manifest>
+<!--                        <manifestEntries>-->
+<!--                            <mode>development</mode>-->
+<!--                            <url>${project.url}</url>-->
+<!--                            <key>value</key>-->
+<!--                        </manifestEntries>-->
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
