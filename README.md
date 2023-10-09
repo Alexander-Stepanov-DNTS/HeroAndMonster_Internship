@@ -14,14 +14,17 @@ git clone https://github.com/Alexander-Stepanov-DNTS/HeroAndMonster_Internship
 ```
 mvn clean package
 ```
-
 ## Использование программы:
 
 После успешной сборки, программу можно запустить с помощью команды:
 ```
 java -jar .\target\HeroAndMonster_Internship_HeadsAndHands-1.0.jar
 ```
-
 ## Реализация
 
 При реализации было решено что герой будет исцеляться лечебным зельем каждый раз когда он при смерти (health points <= 0)
+
+## Контакты
+* Tелефон: +79516543248
+
+* Telegram user-name: @Babusec
